@@ -61,9 +61,9 @@ app.post("/payment", urlencodedParser, function (req, res) {
         number: 22223333,
       },
       address: {
-        street_name: "Calle Falsa",
+        street_name: "Falsa",
         street_number: 123,
-        zip_code: "1111",
+        zip_code: "055411",
       },
     },
     back_urls: {
