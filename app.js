@@ -7,7 +7,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 var app = express();
 
-// SDK de Mercado Pago
+// SDK de Mercado Pago.
 const mercadopago = require("mercadopago");
 // Agrega credenciales
 mercadopago.configure({
