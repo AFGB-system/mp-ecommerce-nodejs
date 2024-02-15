@@ -51,13 +51,13 @@ app.post("/payment", urlencodedParser, function (req, res) {
         quantity: parseInt(req.body.unit),
       },
     ],
-    external_reference: "andres.felipe.garcia18@gmail.com",
+    external_reference: "anfegabe_18@hotmail.com",
     payer: {
       name: "Lalo",
       surname: "Landa",
       email: "test_user_51300629@testuser.com",
       phone: {
-        area_code: "11",
+        area_code: "57",
         number: 22223333,
       },
       address: {
