@@ -12,7 +12,7 @@ const mercadopago = require("mercadopago");
 // Agrega credenciales
 mercadopago.configure({
   access_token:
-    "APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398",
+    "APP_USR-8902774665784533-092911-fab78ca802b6475923ebb446b02fee62-1160743707",
   integrator_id: "dev_24c65fb163bf11ea96500242ac130004",
 });
 
@@ -42,42 +42,42 @@ app.post("/payment", urlencodedParser, function (req, res) {
         id: "1234",
         title: req.body.title,
         description: "Dispositivo móvil de Tienda e-commerce",
-        currency_id: "ARS",
+        currency_id: "COP",
         unit_price: parseFloat(req.body.price),
         picture_url: new URL(
           req.body.img,
-          "https://mp-ecommerce-node-matias.herokuapp.com/"
+          "https://tiendatestmp-91b440be330a.herokuapp.com/"
         ).href,
         quantity: parseInt(req.body.unit),
       },
     ],
-    external_reference: "maty9623@gmail.com",
+    external_reference: "andres.felipe.garcia18@gmail.com",
     payer: {
       name: "Lalo",
       surname: "Landa",
-      email: "test_user_63274575@testuser.com",
+      email: "test_user_51300629@testuser.com",
       phone: {
         area_code: "11",
         number: 22223333,
       },
       address: {
-        street_name: "Falsa",
+        street_name: "Calle Falsa",
         street_number: 123,
         zip_code: "1111",
       },
     },
     back_urls: {
-      success: "https://mp-ecommerce-node-matias.herokuapp.com/success",
-      failure: "https://mp-ecommerce-node-matias.herokuapp.com/failure",
-      pending: "https://mp-ecommerce-node-matias.herokuapp.com/pending",
+      success: "https://tiendatestmp-91b440be330a.herokuapp.com/success",
+      failure: "https://tiendatestmp-91b440be330a.herokuapp.com/failure",
+      pending: "https://tiendatestmp-91b440be330a.herokuapp.com/pending",
     },
     auto_return: "approved",
     notification_url:
-      "https://mp-ecommerce-node-matias.herokuapp.com/notifications?source_news=webhooks",
+      "https://tiendatestmp-91b440be330a.herokuapp.com/notifications?source_news=webhooks",
     payment_methods: {
       excluded_payment_methods: [
         {
-          id: "amex",
+          id: "visa",
         },
       ],
       excluded_payment_types: [
