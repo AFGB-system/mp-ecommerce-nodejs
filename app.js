@@ -39,7 +39,7 @@ app.post("/payment", urlencodedParser, function (req, res) {
   let preference = {
     items: [
       {
-        id: "4444",
+        id: "1234",
         title: req.body.title,
         description: "Dispositivo móvil de Tienda e-commerce",
         currency_id: "COP",
@@ -58,12 +58,12 @@ app.post("/payment", urlencodedParser, function (req, res) {
       email: "test_user_51300629@testuser.com",
       phone: {
         area_code: "57",
-        number: 22223333,
+        number: 3104434567,
       },
       address: {
         street_name: "Falsa",
         street_number: 123,
-        zip_code: "055411",
+        zip_code: "55411",
       },
     },
     back_urls: {
