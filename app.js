@@ -39,7 +39,7 @@ app.post("/payment", urlencodedParser, function (req, res) {
   let preference = {
     items: [
       {
-        id: "1234",
+        id: "4444",
         title: req.body.title,
         description: "Dispositivo móvil de Tienda e-commerce",
         currency_id: "COP",
@@ -87,7 +87,7 @@ app.post("/payment", urlencodedParser, function (req, res) {
       ],
       installments: 6,
     },
-    statement_descriptor: "CERTIFICACION MP",
+    statement_descriptor: "CERTIFICACION CHO PRO MP",
   };
 
   mercadopago.preferences
