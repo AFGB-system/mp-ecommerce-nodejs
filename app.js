@@ -63,7 +63,7 @@ app.post("/payment", urlencodedParser, function (req, res) {
       address: {
         street_name: "Falsa",
         street_number: 123,
-        zip_code: "55411",
+        zip_code: "055411",
       },
     },
     back_urls: {
@@ -73,7 +73,7 @@ app.post("/payment", urlencodedParser, function (req, res) {
     },
     auto_return: "approved",
     notification_url:
-      "https://tiendatestmp-91b440be330a.herokuapp.com/notifications?source_news=webhooks",
+      "https://tiendatestmp-91b440be330a.herokuapp.com/notifications?",
     payment_methods: {
       excluded_payment_methods: [
         {
